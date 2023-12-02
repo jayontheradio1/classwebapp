@@ -1,0 +1,120 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #1a252f;
+    border-left: 3px solid #3498db;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f5f7;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .header h1 {
+    color: #333333;
+    font-size: 24px;
+  }
+  
+  .course-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .course:last-child {
+    border-bottom: none;
+  }
+  
+  .course-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .course-code {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .course-name {
+    color: #333333;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .course-status {
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  .more-info {
+    color: #3498db;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .more-info:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .course {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
