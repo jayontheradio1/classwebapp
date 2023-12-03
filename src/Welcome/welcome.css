@@ -1,0 +1,29 @@
+/* Welcome.css */
+
+/* Add a background image and style for the container */
+.welcome-container {
+    height: 100vh; /* Set the container to full height of the viewport */
+    background-image: url('https://www.usnews.com/dims4/USNEWS/09239ed/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F70%2F1c%2Fad873b444082bbd6b37ca1130dfe%2F190903illinois-institute-of-technology14.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Style the content inside the container */
+  .welcome-content {
+    color: #ffffff; /* Set text color to white */
+  }
+  
+  .welcome-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-content p {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  
